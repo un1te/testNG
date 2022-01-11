@@ -21,7 +21,7 @@ public class Test3  {
         open("http://google.com");
         $(By.name("q")).setValue("johny");
         $(By.name("q")).pressEnter();
-        $(By.xpath("//h2[@data-attrid=\"title\"]//span")).shouldHave(text("johny"));
+        $(By.xpath("//h2[@data-attrid=\"title\"]//span")).shouldHave(text("bonny"));
         closeWebDriver();
     }
     }
