@@ -4,12 +4,12 @@
     <test verbose="2" preserve-order="true" name="C:/git/testNG/src/test">
         <groups>
             <run>
-                <include name="smoke"/>
+                <include name="regression"/>
             </run>
         </groups>
 
         <packages>
-           <package name="all.*"></package>
+           <package name="test.java.all.*"></package>
        </packages>
     </test>
 </suite>
