@@ -7,8 +7,8 @@ public class Test3 {
 
         @Test
         public void test3() {
-            System.out.println("Pass");
-            Assert.assertEquals("one", "one");
+            System.out.println("Fail");
+            Assert.assertEquals("one", "two");
 
         }
     }
