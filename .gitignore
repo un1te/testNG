@@ -1,6 +1,5 @@
 /target/
 /.idea/
-/allure-results/
 /drivers/
 /build/
 *.jar

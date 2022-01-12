@@ -2,9 +2,11 @@ package com;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.Selenide.webdriver;
 
 public class BaseTest {
 
@@ -24,7 +26,7 @@ public class BaseTest {
 
     @AfterTest
     public void close() {
-        Selenide.closeWebDriver();
+        webdriver().driver().close();
     }
 
     public static void openUrl(String url) {
