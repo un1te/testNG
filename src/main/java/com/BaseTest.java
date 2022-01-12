@@ -1,8 +1,12 @@
-import com.codeborne.selenide.Configuration;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.testng.annotations.BeforeTest;
+package com;
 
-public class Main {
+import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.Selenide;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import static com.codeborne.selenide.Selenide.open;
+
+public class BaseTest {
 
     @BeforeTest
     public void setUp() {
@@ -17,4 +21,16 @@ public class Main {
         Configuration.savePageSource = false;
 //        Configuration.screenshots = true;
     }
+
+    @AfterTest
+    public void close() {
+        Selenide.closeWebDriver();
+    }
+
+    public static void openUrl(String url) {
+        open(Config.BASE_URL + url);
+
+
+    }
+
 }

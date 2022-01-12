@@ -2,12 +2,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="all Test Suite" parallel="methods" thread-count="5">
     <test verbose="2" preserve-order="true" name="C:/git/testNG/src/test">
-<!--        <groups>-->
-<!--            <run>-->
-<!--                <include name="smoke"/>-->
+        <groups>
+            <run>
+                <include name="smoke"/>
 
-<!--            </run>-->
-<!--        </groups>-->
+            </run>
+        </groups>
 
         <packages>
            <package name="all.*"></package>
