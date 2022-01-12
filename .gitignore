@@ -1,6 +1,5 @@
 /target/
 /.idea/
-/drivers/
 /build/
 *.jar
 *.var
