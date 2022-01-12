@@ -21,6 +21,8 @@ public class LoginTest extends BaseTest {
     @Test
     @Description("Logout")
     public void logOut() {
+        openUrl("");
+        loginPage.loginWithCredentials("unite699@gmail.com", "pass123");
         loginPage.logout();
     }
 
